@@ -30,6 +30,10 @@ function nextQuiz() {
     for (let i = 0; i < 14; i++) {
         ulList.lastChild.remove()
     }
+    liList.forEach(li => {
+        li.textContent = '';
+        li.classList.remove('guessed')
+    })
     btnNextQuiz.removeEventListener('click', nextQuiz);
     inputSubmit.removeEventListener('click', checkAnswer1)
 }
