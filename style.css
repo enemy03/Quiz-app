@@ -77,6 +77,8 @@ body {
 .quizList {
     margin-top: 60px;
     padding: 20px 0;
+    display: flex;
+    flex-direction: column;
 }
 
 .quizList ul li {
@@ -91,6 +93,23 @@ body {
 .quizList ul li.guessed {
     color: #84bb6a;
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 1);
+}
+
+.container .quizList button.nextQuiz {
+    margin-top: 30px;
+    margin-right: 20px;
+    padding: 8px;
+    font-size: 1.5rem;
+    align-self: flex-end;
+    width: 35%;
+    text-align: center;
+    font-weight: bold;
+    cursor: pointer;
+    text-transform: uppercase;
+    color: rgba(0, 0, 0, 0.9);
+    background-color: #aed3ff;
+    border-radius: 10px;
+    border: none;
 }
 
 @media (min-width:576px) {
