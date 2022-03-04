@@ -39,16 +39,13 @@ function nextQuiz() {
 }
 
 function checkAnswer2(e) {
-    let index = 0;
     e.preventDefault();
-
-    quizList2.forEach(quiz => {
+    quizList2.forEach((quiz, index) => {
         if (quiz.toLowerCase() == input.value.toLowerCase()) {
             liList[index].textContent = quiz;
             liList[index].classList.add('guessed')
 
         }
-        index++;
     })
 
     input.value = ''
